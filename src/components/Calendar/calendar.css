@@ -13,10 +13,12 @@
   background: none;
   border: none;
   cursor: pointer;
+  user-select: none;
   padding: 5px;
 }
 .calendar__header__button img {
   position: relative;
+  user-select: none;
   z-index: 2;
 }
 .calendar__header__button:hover::before {
@@ -42,6 +44,8 @@
   font-weight: 600;
   font-size: 10.5382px;
   line-height: 21px;
+  width: 105px;
+  text-align: center;
 }
 .calendar__grid {
   display: grid;
