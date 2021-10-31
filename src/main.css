@@ -69,53 +69,6 @@ body {
   line-height: 32px;
 }
 
-.calendar {
-  display: grid;
-  gap: 10px;
-}
-.calendar__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.calendar__header button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-}
-.calendar__header__month {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10.5382px;
-  line-height: 21px;
-}
-.calendar__grid {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(25px, 50px));
-  grid-auto-rows: auto;
-  row-gap: 5px;
-  column-gap: 10px;
-  justify-items: center;
-  justify-content: center;
-}
-.calendar__grid span {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 99px;
-  font-family: "Inter";
-  font-size: 10px;
-  user-select: none;
-}
-.calendar__grid span.active {
-  color: var(--primary);
-  background-color: var(--primary-bg);
-}
-
 @media screen and (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -127,15 +80,5 @@ body {
     margin: 0 auto;
     font-size: 40px;
     line-height: 48px;
-  }
-
-  .calendar__header__month {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 32px;
-  }
-  .calendar__grid span {
-    font-size: 14px;
-    line-height: 24px;
   }
 }
